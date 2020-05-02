@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "sourceMap": true, // 소스맵(*.map) 파일 생성 여부
+    "noImplicitAny": false, // any타입 금지
+    "module": "commonjs", // 모듈 설정
+    "target": "es6", // 코드에서 사용할 ECMAScript 버전 설정
+    "lib": ["es2015", "es2017", "dom"], // 컴파일에 포함될 라이브러리 파일 목록
+    "removeComments": true, // 주석 삭제
+    "allowSyntheticDefaultImports": false, // export default 를 export 한 값들을 가지는 객체로 설정
+    "jsx": "react", // jsx 지원
+    "baseUrl": "./", // Non-relativ 모듈 혹은 paths 옵션의 기준 디렉토리
+    "paths": {
+      // baseUrl 옵션을 기준디렉토리로 불러올 모듈의 위치 설정이 가능
+      "components/*": ["src/components/*"]
+    }
+  }
+}
